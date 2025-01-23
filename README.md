@@ -44,7 +44,8 @@ Run the following command:
 
 Wait for the process to complete.
 
-Method 3: Using DISM with Source (If Internet Installation Fails)
+**Method 3: Using DISM with Source (If Internet Installation Fails)**
+
 If the above methods fail due to missing source files, try installing .NET Framework 3.5 from a Windows installation ISO:
 
 Mount the Windows installation ISO (or insert a bootable USB).
