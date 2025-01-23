@@ -1,4 +1,4 @@
-# microsoft-windows-netfx3-ondemand-package
+ # microsoft-windows-netfx3-ondemand-package
 
 Windows 11 is missing microsoft-windows-netfx3-ondemand-package by default. 
 
@@ -17,7 +17,11 @@ microsoft-windows-netfx3-ondemand-package
 
 Extract Cab files from Old Windows 11 ISO: [https://archive.org/details/Win11_English_x64](https://archive.org/details/Win11_English_x64)
 
-Under **\sources\sxs\** on the ISO
+Mount the ISO 
+
+    Mount-DiskImage -ImagePath “C:\Temp\Windows.iso”
+
+    Enable-WindowsOptionalFeature -online -FeatureName NetFX3 -all -limitaccess -source D:\
 
 
 ------------
