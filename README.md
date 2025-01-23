@@ -19,10 +19,15 @@ Extract Cab files from Old Windows 11 ISO: [https://archive.org/details/Win11_En
 
 Mount the ISO 
 
-    Mount-DiskImage -ImagePath “C:\Temp\Windows.iso”
+    Mount-DiskImage -ImagePath “C:\Temp\Win11_English_x64.iso”
 
-    Enable-WindowsOptionalFeature -online -FeatureName NetFX3 -all -limitaccess -source D:\
+    md %systemdrive%\tempnetfx3
+    
+    expand.exe -f:* D:\Sources\SxS\microsoft-windows-netfx3-ondemand-package~31bf3856ad364e35~amd64~~.cab %systemdrive%\tempnetfx3 >nul
 
+    dism.exe /Online /Add-Package /PackagePath:"%systemdrive%\tempnetfx3\update.mum"
+
+    rd /s /q %systemdrive%\tempnetfx3
 
 ------------
 
