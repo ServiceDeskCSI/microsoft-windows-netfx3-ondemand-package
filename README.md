@@ -26,38 +26,6 @@ Mount the ISO
 
 ------------
 
-To install the .cab file for .NET Framework 3.5 (Microsoft-Windows-NetFx3-OnDemand-Package.cab), follow these steps:
-
-**Method 1: Using DISM (Deployment Image Servicing and Management)**
-
-Open Command Prompt as Administrator.
-
-Run the following command (replace X:\path\to\cabfile.cab with the actual path to the .cab file):
-
-    DISM /Online /Add-Package /PackagePath: C:\path\to\cabfile.cab
-
-Wait for the installation to complete. Restart your computer if required.
-
-**Method 2: Using PowerShell**
-
-Open PowerShell as Administrator.
-
-Run the following command:
-
-    Add-WindowsPackage -Online -PackagePath "C:\path\to\cabfile.cab"
-
-Wait for the process to complete.
-
-**Method 3: Using DISM with Source (If Internet Installation Fails)**
-
-If the above methods fail due to missing source files, try installing .NET Framework 3.5 from a Windows installation ISO:
-
-Mount the Windows installation ISO (or insert a bootable USB).
-
-Note the drive letter of the mounted ISO (e.g., D:).
-
-Run the following command, replacing D:\sources\sxs with the correct path:
-
-    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:D:\sources\sxs
+How to Download Old Windows 11 ISOs [23H2, 22H2, 21H2]: https://www.youtube.com/watch?v=zBjzQTn
 
 ------------
