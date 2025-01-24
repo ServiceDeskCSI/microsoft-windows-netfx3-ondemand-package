@@ -33,4 +33,6 @@ Mount the ISO
 
 How to Download Old Windows 11 ISOs [23H2, 22H2, 21H2]: https://www.youtube.com/watch?v=zBjzQTn
 
+Download the ISO using UUP. https://github.com/ServiceDeskCSI/microsoft-windows-netfx3-ondemand-package/releases/download/Windows11_22000.3260_amd64/22000.3260_amd64_en-us_professional_35630b7b_convert.zip
+
 ------------
