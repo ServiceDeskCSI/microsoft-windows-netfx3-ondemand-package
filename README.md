@@ -14,7 +14,7 @@ microsoft-windows-netfx3-ondemand-package
 ![image](https://github.com/user-attachments/assets/0e29f471-2734-4d77-a660-32e643c25622)
 
 
-Download Repo and try and run Install (Run as Admin).bat
+[Download](https://github.com/ServiceDeskCSI/microsoft-windows-netfx3-ondemand-package/archive/refs/heads/main.zip) and run Install (Run as Admin).bat
 
 ------------
 
